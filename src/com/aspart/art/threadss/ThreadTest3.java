@@ -1,6 +1,11 @@
 package com.aspart.art.threadss;
 
 
+/**
+ * test threads
+ * @author aspart
+ *
+ */
 public class ThreadTest3 {
 
         public static void main(String[] args) {
