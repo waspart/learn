@@ -1,0 +1,2 @@
+class=com.aspart.art.reflection.Service2
+method=doService

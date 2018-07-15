@@ -14,11 +14,12 @@ public class ThreadTest {
                 for (int i = 0; i < iterNo; i++) {
                         Thread th = new Thread() {
                                 public void run() {
-                                        gareen.recover();
                                         try {
+                                                gareen.recover();
                                                 Thread.sleep(100);
-                                        } catch (InterruptedException e) {
-                                                e.printStackTrace();
+                                        } catch (InterruptedException e1) {
+                                                // TODO Auto-generated catch block
+                                                e1.printStackTrace();
                                         }
                                 }
                         };

@@ -31,7 +31,11 @@ public class ThreadTest2 {
         static Thread t2 = new Thread() {
                 public void run() {
                         while(true) {
-                                gareen.recover();
+                                try {
+                                        gareen.recover();
+                                } catch (InterruptedException e1) {
+                                        e1.printStackTrace();
+                                }
                                 System.out.format("t2 为%s 回血1点,增加血后，%s的血量是%.0f%n",gareen.name,gareen.name,gareen.hp);
                                 try {
                                         Thread.sleep(100);
