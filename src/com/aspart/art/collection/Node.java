@@ -4,6 +4,7 @@ package com.aspart.art.collection;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Node {
         public Node leftNode;
         public Node rightNode;
